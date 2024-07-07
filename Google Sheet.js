@@ -5,7 +5,7 @@ const form = document.forms['submission-form']
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => alert("We've received your submission."))
+        .then(response => alert("We've received your submission- Good job! Keep in mind that managing emotions under pressure and subject to risks is the key to personal finances."))
         .then(() => { window.location.reload(); })
         .catch(error => console.error('Error!', error.message))
 })
